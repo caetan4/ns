@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
+    
   <html><head>
-
+    <li>
+        <a href="index.html">
+            <img src="./img/usa.svg" alt="Logotipo usagi" class="centered-image">
+     </a>
+    </li>
 <style>/* Stylesheet 1: */
+ 
+ html { 
+ background: url(img/fondo.svg)  repeat-x ; >
+ background-size: cover;
+ background-attachment: fixed
+ }
 body {
     font-family: Arial;
   
-
-
+/* 
     background-color: #4b36d1;
     background-image:  linear-gradient(0deg, blue, white);
     line-height: 20px;
+ */
+   
+
 }
 
 .container {
@@ -36,15 +49,23 @@ body {
 }
 
 #menubar {
+    
     width: 190px;
     float: right;
 }
 
 #main {
-    padding: 10px;
+
+    display: inline-block;
+ 
+ padding: 50px;
+ margin: 50px;
+ border-radius: 30px;
+  
+  
     background-color: #ffffff;
-    font: 80% Verdana;
-    
+  
+ 
 }
 
 #main h1, #main h2 {
@@ -52,9 +73,16 @@ body {
 }
 
 #sidebar {
+    display: inline-block;
+ 
+ padding: 50px;
+ margin: 50px;
+ border-radius: 30px;
+  
+  
     background-color: #F6DAD7;
     color: #d14836;
-    padding: 10px;
+ 
 }
 
 #bottom {
@@ -101,6 +129,13 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; /* Puedes ajustar este valor según sea necesario */
 }
  
 @media (max-width: 800px) {
