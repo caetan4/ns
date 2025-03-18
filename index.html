@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <html><head>
+
+<style>/* Stylesheet 1: */
+body {
+    font-family: Arial;
+  
+
+
+    background-color: #4b36d1;
+    background-image:  linear-gradient(0deg, blue, white);
+    line-height: 20px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top {
+    color: #1f108e;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 26px;    
+}
+
+#top h1 {
+    text-align: center;
+    margin:0;
+    line-height: 50px;
+}
+
+#menubar {
+    width: 190px;
+    float: right;
+}
+
+#main {
+    padding: 10px;
+    background-color: #ffffff;
+    font: 80% Verdana;
+    
+}
+
+#main h1, #main h2 {
+    color: #d14836;
+}
+
+#sidebar {
+    background-color: #F6DAD7;
+    color: #d14836;
+    padding: 10px;
+}
+
+#bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    color: #ffffff;
+}
+
+#menulist {
+    padding:0;
+    font: 16px verdana;
+}
+
+.menuitem {
+    width: 155px;
+    background-color: #d14836;
+    border: 1px solid #d14836;
+    border-radius: 40px;
+    color: #ffffff;
+    list-style-type: none;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.menuitem:first-child {
+   background-color:#04AA6D;
+   color: white;
+   font-weight:bold;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+    color: #d14836;
+}
+
+a {
+    color: #456b6a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+ 
+@media (max-width: 800px) {
+            #sidebar {
+                width: auto;
+                position: relative;
+            } 
+            #main {
+                margin-right: 0;
+            }    
+               
+        }
+        
+        @media (max-width: 600px) {
+            #menubar {
+                width: auto;
+                float: none;
+            }
+            #main {
+                margin: 0;
+            }    
+        }
+</style>
+
+</head>
+<body>
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>Welcome to My Homepage</h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </div>
+  <div class="wrapper">
+   <div id="menubar">
+     <ul id="menulist">
+       <li class="menuitem" onclick="reStyle(0)">Stylesheet 1
+      </li><li class="menuitem" onclick="noStyles()">No Stylesheet
+     </li></ul>
+    </div>
+    <div id="main">
+      <h1>Sobre mi</h1>
+      <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:<br>
+   </p>
+         </div>
+    <div id="sidebar">
+      <h3>Side-Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+  </div>  
+  
+  
+  <div id="bottom">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+  </div>
+</div>
+
+
+
+
+
+</body></html>
