@@ -20,7 +20,7 @@ div.scroller {
 body {
 
 
-    font-family: "Marcellus", serif;
+    font-family: "Marcellus", serif; font-size: 150%;
 
     /* 
 background-color: #4b36d1;
@@ -28,12 +28,6 @@ background-image:  linear-gradient(0deg, blue, white);
 line-height: 20px;
 */
 
-    div.scroller {
-        width: 300px;
-        height: 100px;
-        overflow-y: scroll;
-        scrollbar-color: pink lightblue;
-    }
 
 }
 
@@ -66,6 +60,7 @@ line-height: 20px;
 
 #top p {
     font-family: 'Bytesized', sans-serif;
+    font-size: 150%;
 }
 
 #menubar {
@@ -115,8 +110,8 @@ line-height: 20px;
     /* Remove default margin */
     position: absolute;
     /* Position it relative to the card */
-    top: 32%;
-    left: 20%;
+    top: 22%;
+    left: 30%;
     transform: translate(-50%, -50%) rotate(180deg);
     /* Center and adjust rotation */
 }
@@ -126,9 +121,9 @@ line-height: 20px;
     /* Tablet view */
     #main h1 {
 
-        top: 35%;
+        top: 26%;
         /* Keep it vertically centered */
-        left: 34%;
+        left: 28%;
         /* Adjust closer to the GIF for tablet */
         transform: translate(-50%, -50%) rotate(180deg);
         /* Center and adjust rotation */
@@ -151,16 +146,17 @@ line-height: 20px;
 #main h1,
 #main h2 {
     color: #ffffff;
+   
 }
 
 #sidebar {
-
+   
     display: inline-block;
 
-    padding: 10px;
-    margin: 50px;
+    padding: 2%;
+    margin: 20%;
     border-radius: 30px;
-
+  
 
     background-color: #6fa7f1;
     color: #ffffff;
@@ -170,7 +166,8 @@ line-height: 20px;
 #bottom {
     color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 0%;
+    margin: 5%;
     font-size: 70%;
 
 }
@@ -196,12 +193,12 @@ a:hover {
 }
 
 .card {
-    width: 400px;
+    width: 65%;
 }
 
 .image-container {
     line-height: 0;
-    overflow: hidden;
+  overflow: hidden;
     float: right;
     width: 75%;
     /* Set the width to 75% of the card */
@@ -250,6 +247,7 @@ a:hover {
 }
 
 .image-container:hover .hover-content {
+ 
     opacity: 1;
 }
 
@@ -274,9 +272,9 @@ a:hover {
     #main,
     #sidebar {
        
-      
-        margin: 20px 0;
+        padding: 40%;
+        margin: -30%;
         /* Add margin to separate the cards */
-        width: 80%;
+        
     }
 }
