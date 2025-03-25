@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
     
-  <html><head>
-    <li>
-        <a href="index.html">
-            <img src="./img/usa.svg" alt="Logotipo usagi" class="centered-image">
-     </a>
-    </li>
+  <head>
+    <a href="index.html">
+      <img src="./img/usa.svg" alt="Logotipo usagi" class="centered-image">
+    </a>
 <style>/* Stylesheet 1: */
  
 /* Import Larken Medium font */
-@import url('https://fonts.googleapis.com/css2?family=Larken:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bytesized&family=Marcellus&family=Turret+Road:wght@200;300;400;500;700;800&family=Yuji+Syuku&display=swap');
 
  html { 
- background: url(img/fondo.svg)  repeat-x ; >
+ background: url(img/fondo.svg)  repeat-x;
  background-size: cover;
  background-attachment: fixed
  }
 body {
-    font-family: 'Larken', Arial, sans-serif; /* Use Larken Medium or fallback fonts */
+    font-family: "Marcellus", serif; 
   
 /* 
     background-color: #4b36d1;
@@ -40,9 +39,9 @@ body {
 }
 
 #top {
-    color: #1f108e;
+    color: #3f87cb;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 26px;    
 }
 
@@ -50,6 +49,10 @@ body {
   
     margin: 2%;
     line-height: 50px;
+}
+
+#top p {
+    font-family: 'Bytesized', sans-serif; /* Apply Bytesized font */
 }
 
 #menubar {
@@ -127,10 +130,11 @@ body {
 }
 
 #bottom {
+    color: #ffffff;
     text-align: center;
     padding: 10px;
     font-size: 70%;
-    color: #ffffff;
+   
 }
 
 
@@ -176,18 +180,16 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; /* Ensure it spans the full width */
     height: 100%;
     background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block; /* Change to block for more flexible content */
+    padding: 20px; /* Add padding for text spacing */
+    text-align: left; /* Align text to the left */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    box-sizing: border-box; /* Include padding in width calculation */
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.image-container:hover img {
-    opacity: 0; /* Hide the image on hover */
 }
 
 .image-container:hover .hover-content {
@@ -218,6 +220,8 @@ a:hover {
 
 </head>
 <body>
+</head>
+<body>
 
 <div class="container wrapper">
   <div id="top">
@@ -240,7 +244,8 @@ a:hover {
       <div class="image-container">
         <img src="./img/autorretrato01.gif" alt="Imagen de perfil">
         <div class="hover-content">
-          <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.</p>
+          <p>19 años  🇲🇽/🇦🇷 
+             <br> illustradora digital, estudiambre </p>
         </div>
       </div>
       
@@ -255,15 +260,15 @@ a:hover {
         <div style="display: flex; flex-direction: column; gap: 15px;">
           <div style="display: flex; align-items: center; gap: 10px;">
             <img src="./img/instagram-brands.svg" alt="Instagram Icon" style="width: 30px; height: 30px;">
-            <a href="https://instagram.com" target="_blank" style="color: #ffffff; text-decoration: none;">https://instagram.com</a>
+            <a href="https://www.instagram.com/usagii_x?igsh=ZnFnZnhhOWlwOXVr&utm_source=qr" target="_blank" style="color: #ffffff; text-decoration: none;">https://usagii_x.com</a>
           </div>
           <div style="display: flex; align-items: center; gap: 10px;">
             <img src="./img/envelope-solid.svg" alt="Email Icon" style="width: 30px; height: 30px; filter: invert(1);">
-            <a href="mailto:example@example.com" target="_blank" style="color: #ffffff; text-decoration: none;">example@example.com</a>
+            <a href="mailto:cprieto@centro.edu.mx" target="_blank" style="color: #ffffff; text-decoration: none;">cprieto@centro.edu.mx</a>
           </div>
           <div style="display: flex; align-items: center; gap: 10px;">
             <img src="./img/phone-solid.svg" alt="Phone Icon" style="width: 30px; height: 30px; filter: invert(1);">
-            <a href="tel:+123456789" target="_blank" style="color: #ffffff; text-decoration: none;">+123456789</a>
+            <a href="tel:5560921793" target="_blank" style="color: #ffffff; text-decoration: none;">5560921793</a>
           </div>
         </div>
         <img src="./img/maga.svg  " alt="Pixels Icon" style="width: 200px; height: 200px; margin: 0;">
