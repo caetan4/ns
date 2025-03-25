@@ -1,11 +1,12 @@
 /* Import Larken Medium font */
 
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bytesized&family=Marcellus&family=Turret+Road:wght@200;300;400;500;700;800&family=Yuji+Syuku&display=swap');
-
+@import url("scroll.css");
 html {
     background: url(../img/fondo.svg) repeat-x;
     background-size: cover;
-    background-attachment: fixed
+    background-attachment: fixed;
+    background-size: auto 100%;
 }
 
 div.scroller {
@@ -156,7 +157,7 @@ line-height: 20px;
 
     display: inline-block;
 
-    padding: 50px;
+    padding: 10px;
     margin: 50px;
     border-radius: 30px;
 
@@ -199,6 +200,8 @@ a:hover {
 }
 
 .image-container {
+    line-height: 0;
+    overflow: hidden;
     float: right;
     width: 75%;
     /* Set the width to 75% of the card */
@@ -221,6 +224,7 @@ a:hover {
 }
 
 .image-container .hover-content {
+    line-height: 1.2em;
     position: absolute;
     top: 0;
     left: 0;
@@ -253,6 +257,7 @@ a:hover {
     #sidebar {
         width: auto;
         position: relative;
+        
     }
 
     #main {
@@ -268,6 +273,8 @@ a:hover {
 
     #main,
     #sidebar {
+       
+      
         margin: 20px 0;
         /* Add margin to separate the cards */
         width: 80%;
