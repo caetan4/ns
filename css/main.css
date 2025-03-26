@@ -163,8 +163,9 @@ line-height: 20px;
 }
 
 #sidebar a:hover {
-    font-size: 1.5em; /* Increase font size by 0.5 */
-    transition: font-size 0.3s ease; /* Smooth transition */
+    font-size: 1.2em; /* Increase font size by 0.5 */
+    font-family: "Marcellus", serif; /* Change font family */
+    transition: font-size 0.3s ease, font-family 0.3s ease; /* Smooth transition */
 }
 
 #bottom {
