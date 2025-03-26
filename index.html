@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>usagii_x carta de presentacion</title>
+    <title> usagii_x carta de presentacion </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      .popup {
+        font-family: "Marcellus", serif;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 70%;
+        display: none; /* Initially hidden */
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 5px;
+      }
+
+      .link-container.instagram:hover .popup {
+        display: block; /* Show popup only on Instagram link hover */
+      }
+    </style>
   </head>
   <body>
     <a href="index.html">
@@ -26,12 +47,12 @@
      </ul>
     </div>
     <div id="main" class="card">
-      <h1>Sobre mi</h1>
+      <h1>Sobre mi 	&#10023;</h1>
       <div class="image-container">
         <img src="./img/autorretrato01.gif" alt="Imagen de perfil">
         <div class="hover-content">
           <p>19 años  🇲🇽/🇦🇷 
-             <br> illustradora digital, estudiambre </p>
+             <br> illustradora digital y estudiambre </p>
         </div>
       </div>
       
@@ -45,20 +66,28 @@
       </div>
       <div style=" overflow: hidden; font-family: 'Bytesized' ;font-size:120% ;display: flex; flex-direction: row; gap: 20px; margin: 6%; margin-bottom: 0%;">
         <div style="display: flex; flex-direction: column; gap: 15px;">
-          <a href="https://www.instagram.com/usagii_x?igsh=ZnFnZnhhOWlwOXVr&utm_source=qr" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 10px;">
-            <img src="./img/instagram-brands.svg" alt="Instagram Icon" style="width: 30px; height: 30px;">
-            https://usagii_x.com
-          </a>
-          <a href="mailto:cprieto@centro.edu.mx" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 10px;">
-            <img src="./img/envelope-solid.svg" alt="Email Icon" style="width: 30px; height: 30px; filter: invert(1);">
-            cprieto@centro.edu.mx
-          </a>
+          <div class="link-container" style="position: relative;">
+            <a href="mailto:cprieto@centro.edu.mx" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+              <img src="./img/envelope-solid.svg" alt="Email Icon" style="width: 30px; height: 30px; filter: invert(1);"> cprieto@centro.edu.mx</a>
+              <a href="https://open.spotify.com/user/gksue2pi6flhruzbv6s8ui3nc?si=a228b69f8935426c" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                <img src="img/spotify-brands.svg" alt="spotify Icon" style="width: 30px; height: 30px; "> spotify</a>
+                <a href="https://www.instagram.com/caetana_prieto?igsh=MWwyamR3ZTNjODc3cw%3D%3D&utm_source=qr" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                  <img src="img/instagram-brands.svg" alt="instagram personal" style="width: 30px; height: 30px; "> insta personal</a>
+
+              <div class="link-container instagram" style="position: relative;">
+                <a href="https://www.instagram.com/usagii_x?igsh=ZnFnZnhhOWlwOXVr&utm_source=qr" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 10px;">
+                  <img src="img/graphic-designer-creative-draw-artist-svgrepo-com.svg" alt="Instagram Icon" style="width: 30px; height: 30px; filter: invert(1);"">
+                  https://usagii_x.com
+                </a>
+                <div class="popup">Juro que pronto subire trabajos actuales 👽&#127744;</div>
+              </div>
+
           <a href="tel:5560921793" target="_blank" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 10px;">
             <img src="./img/phone-solid.svg" alt="Phone Icon" style="width: 30px; height: 30px; filter: invert(1);">
             5560921793
           </a>
         </div>
-        <img src="./img/maga.svg" alt="Pixels Icon" style="width: 200px; height: 200px; ">
+        <img class="" src="./img/maga.svg" alt="Pixels Icon" style="width: 200px; height: 200px; ">
 
       </div>
     </div>
@@ -66,7 +95,8 @@
   
   
   <div id="bottom"></div>
-    Caetana Prieto Muzzachiodi 2025.
+  &#9998; 	&#10022; Caetana Prieto Muzzachiodi 2025. 	&#10022;
+  &#128164; 	
   </div>
 </div>
 
